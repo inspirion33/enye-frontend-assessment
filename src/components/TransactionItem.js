@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './TransactionItem.css';
+import { FaChevronCircleDown, FaChevronCircleUp } from 'react-icons/fa';
 
 const TransactionItem = ({ transaction }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const TransactionItem = ({ transaction }) => {
 				<div className="td-domain">{transaction.DomainName}</div>
 				<div className="td-lastlogin">{transaction.LastLogin}</div>
 				<div id="drop" onClick={() => toggledropdown()}>
-					##
+					<FaChevronCircleDown color='lightblue' />
 				</div>
 			</div>
 			<div id="showOrHide" className={classes}>
