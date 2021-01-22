@@ -10,10 +10,10 @@ import './TransactApp.css';
 
 const TransactApp = () => {
     const [transactions, setTransactions] = useState([]);
-    const [data, setData] = useState([])
-    const [searchField, setSearchField] = useState('');
-    const [genderField, setGenderField] = useState('');
-    const [paymentMethodField, setPaymentMethodField] = useState('');
+    const [data, setData] = useState([]);
+    // const [searchField, setSearchField] = useState('');
+    // const [genderField, setGenderField] = useState('');
+    // const [paymentMethodField, setPaymentMethodField] = useState('');
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [transactionsPerPage] = useState(10);
@@ -32,7 +32,7 @@ const TransactApp = () => {
         fetchTransactions();
     }, []);
 
-    console.log(transactions.length);
+    // console.log(transactions.length);
 
     // Get Current posts
     const indexOfLastTransaction = currentPage * transactionsPerPage;
@@ -43,22 +43,22 @@ const TransactApp = () => {
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
     // Filter by Search Change
-    const onSearchChange = (event) => {
-        setSearchField(event.target.value);
-        console.log(event.target.value);
-    }
+    // const onSearchChange = (event) => {
+    //     setSearchField(event.target.value);
+    //     // console.log(event.target.value);
+    // }
 
     // Filter by Gender
     const onGenderSelect = (event) => {
-        setGenderField(event.target.value);
-        console.log(event.target.value);
+        // setGenderField(event.target.value);
+        // console.log(event.target.value);
         setGenderValue(event.target.value)
     }
 
     // Filter by PaymentMethod
     const onPaymentSelect = (event) => {
-        setPaymentMethodField(event.target.value);
-        console.log(event.target.value);
+        // setPaymentMethodField(event.target.value);
+        // console.log(event.target.value);
         setPaymentValue(event.target.value)
     }
 
@@ -139,7 +139,7 @@ const TransactApp = () => {
                     </div>
 
                     <div className="alignRight">
-                        <SearchBox searchChange={onSearchChange} filterOnSearch={filterData}/>
+                        <SearchBox filterOnSearch={filterData}/>
                     </div>
                 </div>
 

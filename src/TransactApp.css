@@ -35,13 +35,13 @@ body{ background-color: #f8f7f7;}
 
 .alignLeft {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .alignRight {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 
