@@ -1,0 +1,173 @@
+body{ background-color: #f8f7f7;}
+
+.header {
+    background-color: #151515;
+    height: 60px;
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.title-header {
+    margin-bottom: 4rem;
+}
+
+/* Container style */
+.container {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Filter Tab */
+.filter-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #c1bbbd;
+}
+
+.alignLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.alignRight {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.tag {
+    margin-right: 10px;
+}
+
+select.filter, button {
+    padding: 5px;
+}
+
+/* Loading Animation */
+
+.loading-bg {
+    background-color: rgba(250, 134, 121, 0.226);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+}
+em.loading {
+    width: 1rem;
+    height: 1rem;
+    margin: 2rem 0.3rem;
+    background-color: #cc2727;
+    border-radius: 50%;
+    animation: 0.9s bounce infinite alternate;
+}
+em:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+em:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+  
+@keyframes bounce {
+to {
+    opacity: 0.3;
+    transform: translate3d(0, -1rem, 0);
+}
+}
+
+/* Transaction Header Tab */
+
+.transaction-tab {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.transaction-tab.detail {
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+.transaction-tab.detail:hover {
+    transform: scale(1.009);
+}
+
+.td-fullname {
+    flex: 1.5;
+}
+
+.td-email {
+    flex: 1.5;
+}
+
+.td-gender {
+    flex: 0.8;
+}
+
+.td-phone {
+    flex: 1;
+}
+
+.td-domain {
+    flex: 1;
+}
+
+.td-lastlogin {
+    flex: 1;
+}
+
+#drop {
+    flex: 0.08;
+}
+
+.tab {
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-color: #249ecb !important;
+    color: #ffffff !important;
+}
+
+.detail {
+    margin-bottom: 5px;
+    color: #222222;
+}
+
+
+/* Search Box CSS */
+
+input.pa3 {
+    padding: 5px;
+    width: 30vw;
+}
+
+.pagination {
+    list-style: none;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.pageItem {
+    border: 1px solid #222222;
+    padding: 7px;
+    border-radius: 0.2px;
+}
+
+li.currentPage a {
+    color: #cc2727;
+}
